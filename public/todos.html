@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="todo-app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Todo Manager</title>
+</head>
+<body>
+  <h1 class="heading">My Todo-list</h1>
+  <section class="input-section">
+    <input class="todo-text-input" type="text" name="todo_text" id="todo_text">
+    <input class="due-date-input" type="date" name="due_date" id="due_date">
+    <button class="add-btn">Add</button>
+  </section>
+  <section class="todo-items">
+    <h3 class="due-heading">Due Today <span class="number-of-items">0/4</span></h3>
+    <ul>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Submit SaaS 201 project <span class="overdue">Overdue</span></label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Call accountant</label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+    </ul>
+    <h3 class="due-heading">Due Tomorrow <span class="number-of-items">0/3</span></h3>
+    <ul>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Refill groceries</label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+    </ul>
+    <h3 class="due-heading">Remaining <span class="number-of-items">0/3</span></h3>
+    <ul>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Type something <span class="todo_date">Jan 21</span></label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Type something <span class="todo_date">Jan 22</span></label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+      <li class="todo-item">
+        <input class="todo-checkbox" type="checkbox">
+        <label class="todo-label">Type something <span class="todo_date">Jan 23</span></label>
+        <i class="far fa-trash-alt"></i>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
