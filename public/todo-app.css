@@ -41,7 +41,7 @@ body {
 .number-of-items {
   font-size: 18px;
   color: rgb(92, 92, 92);
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 .todo-item {
@@ -76,5 +76,11 @@ body {
 
 .overdue {
   color: darkred;
+  font-size: 0.8rem;
+}
+
+.todo-date {
+  color: rgb(92, 92, 92);
+  color: gray;
   font-size: 0.8rem;
 }
