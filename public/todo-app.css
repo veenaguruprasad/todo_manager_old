@@ -62,6 +62,7 @@ body {
 .todo-checkbox {
   height: 20px;
   width: 20px;
+  cursor: pointer;
 }
 
 .fa-trash-alt {
@@ -70,6 +71,7 @@ body {
 
 .todo-item:hover .fa-trash-alt {
   visibility: visible;
+  cursor: pointer;
 }
 
 .overdue {
