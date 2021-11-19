@@ -1,0 +1,13 @@
+<h3 class="due-heading"><%= section_title %> <span class="number-of-items"><%= todos.completed.count %>/<%= todos.count %></span></h3>
+<ul>
+<% todos.all.each do |todo| %>
+  <li class="todo-item">
+    <input class="todo-checkbox" type="checkbox">
+    <label class="todo-label"> <%= todo.todo_text %>
+    <% if show_due_date %>
+      <span class="todo-date"><%= todo.due_date.to_s(:short) %></span>
+    <% end %>
+    </label>
+    <i class="far fa-trash-alt"></i>
+  </li>
+<% end %>

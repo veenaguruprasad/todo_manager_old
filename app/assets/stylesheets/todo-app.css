@@ -1,0 +1,86 @@
+body {
+  margin: auto;
+  max-width: 500px;
+  font-family: sans-serif;
+}
+
+.heading {
+  font-size: 32px;
+  margin: 30px 0;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.todo-text-input {
+  border: solid rgb(182, 181, 181) 1px;
+  padding: 10px;
+}
+
+.due-date-input {
+  border: solid rgb(182, 181, 181) 1px;
+  padding: 10px;
+}
+
+.add-btn {
+  border: none;
+  color: white;
+  background-color: rgb(63, 228, 63);
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.due-heading {
+  font-size: 22px;
+  margin: 20px 0 0 0;
+}
+
+.number-of-items {
+  font-size: 18px;
+  color: rgb(92, 92, 92);
+  margin: 0 20px;
+}
+
+.todo-item {
+  margin: 10px 30px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.todo-item:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.todo-label {
+  margin: 0 10px;
+}
+
+.todo-checkbox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  visibility: hidden;
+}
+
+.todo-item:hover .fa-trash-alt {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.overdue {
+  color: darkred;
+  font-size: 0.8rem;
+}
+
+.todo-date {
+  color: rgb(92, 92, 92);
+  color: gray;
+  font-size: 0.8rem;
+}

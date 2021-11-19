@@ -22,6 +22,10 @@ class Todo < ActiveRecord::Base
     where("due_date > ?", Date.today)
   end
 
+  def self.completed
+    where(completed: true)
+  end
+
   def self.to_displayable_list
     all.map { |todo| todo.to_displayable_string }
   end
